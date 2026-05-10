@@ -4,10 +4,22 @@ export default function Page() {
   const PROJECTS = [
     {
       name: 'Armature Labs',
-      description: 'The first reliable AI scientist',
+      description: 'The AI Native Operating System for Regulated Science',
       liveLink: 'https://armaturelabs.ai',
       previewImage: '/armature.png',
-      repoUrl: 'https://github.com/Armature-Labs',
+    },
+    {
+      name: 'Blackwall',
+      description: 'Alpha-zero inspired data auto-redactor to preserve maximum context for AI insights without leaking personal information',
+      liveLink: 'https://devpost.com/software/blackwallai',
+      previewImage: '/redaction_ui.jpeg',
+      repoUrl: 'https://github.com/JOSHMT0744/shadowAIBlackwall'
+    },
+    {
+      name: 'Artemis IV South Pole Landing Site Explorer',
+      description: 'An interactive visualization tool for lunar south pole terrain and illumination data to support Artemis IV landing site selection.',
+      previewImage: '/artemis_iv.webp',
+      repoUrl: 'https://github.com/JOSHMT0744/adv_viz_coursework',
     },
     {
       name: 'Entropy-Regularisd Autonomous IoT System',
@@ -39,11 +51,11 @@ export default function Page() {
           >
             <div className="w800:w-full mx-auto w-3/4">
               <AspectRatio
-                className="rounded-base shadow-shadow -bottom-[2px]! border-2 border-black"
+                className="rounded-base shadow-shadow -bottom-[2px]! border-2 border-black overflow-hidden"
                 ratio={2 / 1}
               >
                 <img
-                  className="rounded-base w-full object-cover"
+                  className="rounded-base w-full h-full object-cover"
                   src={`${project.previewImage}`}
                   alt={project.name}
                 />

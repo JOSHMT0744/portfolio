@@ -3,6 +3,7 @@ import {
   SiGithub,
   SiGmail,
   SiLinkedin,
+  SiMedium
 } from '@icons-pack/react-simple-icons'
 import SiArmaturelabs from '@/components/icons/armature-labs'
 import ImageCard from '@/components/ui/image-card'
@@ -86,6 +87,10 @@ export default function Home() {
     {
       icon: SiLinkedin,
       href: 'https://www.linkedin.com/in/joshuamichaelthompson/',
+    },
+    {
+      icon: SiMedium,
+      href: 'https://medium.com/@joshua.thompson.michael',
     },
     {
       icon: SiArmaturelabs,
